@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Player de Música</title>
+</head>
+<body>
+    <h1 id="Player-Musica" class="fa-btn">
+        <i class="fas fa-music"> Music Player</i>
+    </h1>
+
+
+    <div class="containerMusicas play">
+        <div class="musicaInfos">
+            
+            <h4  id="titulo">MoneyRain
+            </h4> 
+            <div class="barraProgresso">
+                <div class="Progresso"></div>
+            </div>
+
+        </div>
+
+        
+
+        <audio src="./musicas/MoneyRain.mp3" id="audio"></audio>
+
+        <div class="containerImagens">
+            <img src="./imagens/MoneyRain.jpg" alt="music-cover" id="cover">
+        </div>
+
+        <div class="navegacao">
+            
+            <button id="voltar" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="proxima" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+            <div class="slider-wrapper">
+                
+                <input id="vol-controle" type="range" min="0" max="100" step="1">
+                <div id="Volume-Musica" class="fa-btn">
+                    <i class="fas fa-volume-mute"></i>
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
